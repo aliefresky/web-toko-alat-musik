@@ -1,0 +1,7 @@
+node_modules/
+toko-musik.db
+reports/
+cypress/videos/
+cypress/screenshots/
+.env
+coverage/

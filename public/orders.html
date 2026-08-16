@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesanan &#8212; Toko Alat Musik</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="g-nav">
+    <a href="products.html" class="brand">
+      <span class="brand-mark">🎵</span>
+      <span class="brand-name">Toko Alat Musik</span>
+    </a>
+    <div class="g-nav-center">
+      <a href="products.html" class="nav-link">Produk</a>
+      <a href="cart.html" class="nav-link nav-cart">Keranjang<span id="cartBadge" class="cart-count">0</span></a>
+      <a href="orders.html" class="nav-link active">Pesanan</a>
+    </div>
+    <div class="g-nav-right">
+      <span id="roleDisplay"></span>
+      <button class="btn-nav-logout" onclick="Api.logout()">Keluar</button>
+    </div>
+  </nav>
+  <div class="sub-nav">
+    <span class="sub-nav-title" id="ordersSubTitle">Pesanan Saya</span>
+  </div>
+  <div class="container-wide">
+    <div id="ordersContainer">
+      <div class="loading"><div class="spinner"></div> Memuat pesanan&hellip;</div>
+    </div>
+  </div>
+  <div class="toast-container" id="toastContainer"></div>
+  <script src="js/api.js"></script>
+  <script src="js/orders.js"></script>
+</body>
+</html>
